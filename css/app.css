@@ -1,0 +1,21 @@
+body {
+	margin: 0;
+}
+
+.button {
+	margin: 0;
+}
+
+.button-help {
+	padding: 5px;
+	height: auto;
+	line-height: 1.4em;
+}
+
+.top {
+	padding: 10px;
+	margin-bottom: 10px;
+	text-align: right;
+	background: lightgrey;
+	box-shadow: 0 2px 4px grey;
+}

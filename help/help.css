@@ -1,0 +1,19 @@
+.button-help.active {
+	background: #C6F5D3;
+	border: 1px solid green;
+	color: green;
+}
+
+/*main help box container*/
+.help-box {
+	border: 1px solid red;
+	padding: 2px;
+}
+
+.help-bubble {
+	padding: 5px;
+	font-size: 11px;
+	background: white;
+	box-shadow: 1px 1px 4px red;
+	border-radius: 5px;
+}
