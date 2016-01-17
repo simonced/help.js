@@ -1,9 +1,26 @@
 {
 	"title": "Index",
+	"mode": "sequence",
+	"borderPadding": 0,
+	"borderMargin": 4,
 	"blocks": [
 		{
 			"selector": "#help01",
+			"position": "below",
+			"align": "left",
 			"message": "This is a title!"
+		},
+		{
+			"selector": "#help02",
+			"position": "above",
+			"align": "right",
+			"message": "This is a paragraph!"
+		},
+		{
+			"selector": "#help03",
+			"position": "left",
+			"align": "bottom",
+			"message": "This is a word!"
 		}
 	]
 }

@@ -6,14 +6,28 @@
 
 /*main help box container*/
 .help-box {
+	position: absolute;
 	border: 1px solid red;
-	padding: 2px;
+	border-radius: 3px;
+	box-shadow: 0 0 4px hotpink;
 }
 
 .help-bubble {
+	position: absolute;
 	padding: 5px;
 	font-size: 11px;
 	background: white;
 	box-shadow: 1px 1px 4px red;
 	border-radius: 5px;
+}
+
+.help-bubble hr {
+	margin: 2px;
+	padding: 0;
+	border: none;
+	height: 0;
+}
+
+.help-bubble a.button-help {
+	margin: 0 5px;
 }
