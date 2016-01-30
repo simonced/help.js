@@ -12,6 +12,7 @@
 	box-shadow: 0 0 4px hotpink;
 }
 
+/*Help bubble*/
 .help-bubble {
 	position: absolute;
 	padding: 5px;
@@ -29,5 +30,24 @@
 }
 
 .help-bubble a.button-help {
-	margin: 0 5px;
+	padding: 5px;
+	background: lightgrey;
+	font-weight: bold;
+	color: black;
+	border-radius: 5px;
+	min-width: 2em;
+	height: auto;
+	text-align: center;
+}
+
+/*bubble link/buttons container*/
+.help-controls {
+}
+
+/* inner bubble button (a tags)*/
+.help-next {
+	float: right;
+}
+.help-prev {
+	float: left;
 }

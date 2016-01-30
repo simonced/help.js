@@ -19,3 +19,7 @@ body {
 	background: lightgrey;
 	box-shadow: 0 2px 4px grey;
 }
+
+.debug-bg {
+	background-color: #eee;
+}

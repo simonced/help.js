@@ -1,7 +1,7 @@
 {
 	"title": "Index",
 	"mode": "sequence",
-	"borderPadding": 0,
+	"borderPadding": 5,
 	"borderMargin": 4,
 	"blocks": [
 		{
@@ -18,7 +18,7 @@
 		},
 		{
 			"selector": "#help03",
-			"position": "left",
+			"position": "right",
 			"align": "bottom",
 			"message": "This is a word!"
 		}

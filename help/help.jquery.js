@@ -55,10 +55,10 @@ var Help = {
 				// === border ===
 				var helpBorder = $("<div class='help-box'></div>");
 				helpBorder.css({
-					"top": target.offset().top - (this.scenario.borderPadding/2),
-					"left": target.offset().left - (this.scenario.borderPadding/2),
-					"width": (target.width() + this.scenario.borderPadding),
-					"height": (target.height() + this.scenario.borderPadding)
+					"top": target.offset().top - (this.scenario.borderPadding),
+					"left": target.offset().left - (this.scenario.borderPadding),
+					"width": (target.width() + this.scenario.borderPadding*2),
+					"height": (target.height() + this.scenario.borderPadding*2)
 				});
 				$("body").append(helpBorder);
 
@@ -68,14 +68,14 @@ var Help = {
 				var helpBubble = $("<div class='help-bubble'>"+block.message+"</div>");
 
 				// nav
-				var bubbleNav = $("<div><hr></div>");
+				var bubbleNav = $("<div class='help-controls clearfix'><hr></div>");
 				if(this.step>0) {
 					// if we have a bubble after, we add a "next" button
-					bubbleNav.append($("<a href='#prev-bubble' class='button-help help-prev'>Previous</a>"));
+					bubbleNav.append($("<a href='#prev-bubble' class='button-help help-prev'>&lt;</a>"));
 				}
 				if(this.scenario.blocks[this.step+1]) {
 					// if we have a bubble before, we add a "next" button
-					bubbleNav.append($("<a href='#next-bubble' class='button-help help-next'>Next</a>"));
+					bubbleNav.append($("<a href='#next-bubble' class='button-help help-next'>&gt;</a>"));
 				}
 				helpBubble.append(bubbleNav);
 
@@ -126,7 +126,7 @@ var Help = {
 
 	/**
 	 * JQUERY event
-	 * Next bubble display
+	 * Previous bubble display
 	 *
 	 * @author Simonced
 	 * @param event e_
